@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+
+header {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+header h1 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 25px;
+}
+
+.row {
+  width: 100%;
+}
+
+div > div > div {
+
+	border: 1px solid black;
+	background-color: gray;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+
+}
+
+p{
+	font-family: "Arial";
+	font-size: 16px;
+	color: black;
+	font-weight: lighter;
+	padding: 15px;
+
+}
+
+#Chicken, #Beef, #Sushi {
+	font-family: "Arial";
+	font-size: 20px;
+	width: 40%;
+	border: 1px solid black;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	right: 0px;
+}
+
+#Chicken {
+	background-color: Coral;
+}
+
+#Beef {
+	background-color: Brown;
+	color: White;
+}
+
+#Sushi {
+	background-color: Gold;
+}
+
+@media (min-width: 768px) {
+	.col-1, .col-2, .col-3 {
+		float: left;
+    	width: 33.33%;
+    	padding:15px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+	.col-1, .col-2 {
+		float: left;
+		width:50%;
+		padding:15px;
+	}
+
+	.col-3 {
+		float: left;
+		width: 100%;
+		padding:15px;
+	}
+}
+
+@media (max-width:767px) {
+	.col-1, .col-2, .col-3 {
+		width: 100%;
+		padding:15px;
+	}
+}
+
